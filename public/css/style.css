@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.join-main .btn {
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 150px !important;
+  border: 1px solid white;
+  font-size: 17px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.join-main .btn:hover {
+  background: #3d3568;
+  border:1px solid #3d3568;
+  transition: 0.3s;
+}
+/* Chat Page */
+.main_chat {
+  width: 100%;
+  height: auto;
+  padding: 80px 0 80px 0;
+  background: #F2F5FA;
+}
+.chat-container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.chat-header {
+  background:#3D3568;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-container .btn{
+	padding:10px;
+	border-radius: 50px;
+	border:1px solid white;
+	background: transparent;
+	transition: 0.3s;
+	color:white;
+	cursor: pointer;
+}
+.chat-container .btn:hover{
+	background-color: #5c509C;
+	border:1px solid #5c509C;
+	transition: 0.3s;
+}
+.chat-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+  background: #5c509C;
+  color: #fff;
+  padding: 20px 20px 60px;
+  overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+  margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+  padding: 10px 0;
+}
+
+.chat-messages {
+  padding: 30px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.chat-messages .message {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #C8C4DE;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--dark-color-b);
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+  color: #777;
+}
+
+.chat-form-container {
+  padding: 20px 30px;
+  background-color: #3d3568;
+}
+
+.chat-form-container form {
+  display: flex;
+}
+.chat-form-container input{
+	border-radius: 50px;
+	margin-right: 7px;
+	outline: none;
+	height: 50px;
+	font-size: 16px;
+	flex: 1;
+	padding:0.8em;
+  border:none;
+}
+/* Join Page */
+.login {
+  width: 100%;
+  height: 100vh;
+  background: #5c509c;
+  padding-top: 100px;
+}
+.join-container {
+  border-radius: 30px;
+  max-width: 500px;
+  margin: auto;
+  color: #fff;
+  box-shadow: inset 8px 8px 8px #3d3568, inset -8px -8px 8px #928abd;
+}
+
+.join-header {
+  padding: 20px;
+  
+}
+
+.join-main {
+  padding: 30px 40px;
+}
+
+
+.join-main .form-control {
+  margin-bottom: 20px;
+}
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .chat-main {
+    display: block;
+  }
+
+  .chat-sidebar {
+    display: none;
+  }
+}
+/* input */
+.form-control {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0px;
+  border: 0px;
+  font-size: 1em;
+}
+.form-control * {
+  box-sizing: border-box;
+}
+
+.form-control > input,
+.form-control > select,
+.form-control > label{
+  padding: 0.8em;
+  margin: 0.5em;
+  width: 100%;
+  color: white;
+}
+
+
+.form-control > input,
+.form-control > select {
+  border: 1px solid white;
+  border-radius: 2em;
+  outline: none;
+  background: #5c509c;
+  height: 45px;
+}
+.form-control > label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: #ccc;
+  margin-left: 5px;
+}
+input:focus + label,
+input:valid + label,
+select:focus + label,
+select:valid + label {
+  color: white;
+  font-size: 0.8em;
+  width: auto;
+  height: 1.3em;
+  padding: 0px 0.5em 0px 0.5em;
+  margin: 0px;
+  background: #5c509c;
+  transition: 0.2s ease-in-out;
+  top: 0em;
+  left: 2em;
+}
+
+option {
+  color: white;
+}
+/*  */
